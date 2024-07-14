@@ -9,11 +9,12 @@ import TextAreaInput from "@components/ui/forms/input/TextAreaInput.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 
 // Define the variables that will be used in this component
-const title: string = "Contact us";
+const title: string = "Contactanos";
 const subTitle: string =
-  "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.";
-const formTitle: string = "Fill in the form below";
-const formSubTitle: string = "We'll get back to you in 1-2 business days.";
+  "\n" +
+    "¿Tiene preguntas o quiere discutir un proyecto? Comuníquese y creemos la solución perfecta con nuestras herramientas y servicios.";
+const formTitle: string = "Rellene el siguiente formulario\n";
+const formSubTitle: string = "";
 ---
 
 <!-- Contact Us -->
@@ -44,12 +45,12 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <TextInput
                 id="hs-firstname-contacts"
-                label="First Name"
+                label="Nombre"
                 name="hs-firstname-contacts"
               />
               <TextInput
                 id="hs-lastname-contacts"
-                label="Last Name"
+                label="Apellido"
                 name="hs-firstname-contacts"
               />
             </div>
@@ -57,13 +58,13 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
             <PhoneInput id="hs-phone-number" />
             <TextAreaInput
               id="hs-about-contacts"
-              label="Details"
+              label="Detalles"
               name="hs-about-contacts"
             />
           </div>
 
           <div class="mt-4 grid">
-            <AuthBtn title="Send Message" />
+            <AuthBtn title="Enviar mensaje" />
           </div>
 
           <div class="mt-3 text-center">

@@ -152,6 +152,10 @@ article.card {
     width: 0.875rem;
 }
 
+.hero-img {
+    border-radius: 30px;
+}
+
 @media screen and (max-width: 800px) {
     mobile-starlight-toc > nav {
         border-radius: 1rem;
@@ -173,3 +177,4 @@ article.card {
         padding-inline: 1.5rem !important;
     }
 }
+

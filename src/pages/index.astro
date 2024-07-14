@@ -10,7 +10,7 @@ import TestimonialsSection from "@components/sections/testimonials/TestimonialsS
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+import heroImage from "@images/ing-civil.avif";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
@@ -28,37 +28,28 @@ const avatarSrcs: Array<string> = [
 ---
 
 <MainLayout>
-  <AnnouncementBanner
-    btnId="dismiss-button"
-    btnTitle="Explore ScrewFast on GitHub"
-    url="https://github.com/mearashadowfax/ScrewFast"
-  />
+
 
   <HeroSection
-    title=`Equip Your Projects with <span
-        class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
-    primaryBtn="Start Exploring"
+    title=`Equipe sus proyectos con <span
+        class="text-yellow-500 dark:text-yellow-400">InfraLab</span>`
+      subTitle="Soluciones integrales en desarrollo de software y construcción civil. Ofrecemos tecnología avanzada y servicios de construcción de alta calidad, asegurando eficiencia y precisión en cada detalle."
+    primaryBtn="Empezar a explorar"
     primaryBtnURL="/products"
-    secondaryBtn="Contact Sales Team"
+    secondaryBtn="Contactar al equipo"
     secondaryBtnURL="/contact"
-    withReview={true}
-    avatars={avatarSrcs}
-    rating=`<span class="font-bold">4.8</span> / 5`
-    starCount={4}
-    reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
     src={heroImage}
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
 
   <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
+    title="Con nosotros"
+    subTitle="Tu visión se convierte en realidad."
   />
 
   <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    title="Atendemos las demandas de la industria"
+    subTitle="En Infralab, enfrentamos los desafíos únicos de los sectores de software y construcción. Con herramientas de vanguardia y servicios expertos, nos dedicamos a ayudarte a superar obstáculos y alcanzar tus objetivos."
     src={featureImage}
     alt="ScrewFast products in floating boxes"
     features={features}
